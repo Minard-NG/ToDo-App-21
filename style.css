@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+aside {
+  flex: 0 0 40vw;
+  background-image: linear-gradient(to right, rgb(0, 26, 255), blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.932);
+  font-size: 1.6em;
+  font-family: Helvetica, sans-serif;
+  height: inherit;
+}
+#icon{
+    width: 250px;
+    height: auto;
+}
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aside-container > span {
+  align-self: flex-start;
+  font-size: 3em;
+  justify-self: flex-end;
+}
+.aside-container > p {
+  padding: 0;
+  margin: 0;
+}
+.aside-container > small {
+  font-size: 0.7em;
+  color: antiquewhite;
+  font-style: italic;
+  padding: 5px 0px;
+}
+main {
+  flex: 6 1 auto;
+  height: 100vh;
+  background-color: #e4e4e4;
+}
+#toDoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: 80%;
+
+  margin: 0 auto;
+}
+#toDoForm > fieldset {
+  height: 2.5em;
+  width: 100%;
+  border: none;
+}
+#toDoInput {
+  float: left;
+  width: 0%;
+  height: 2.9em;
+  border: 0.5px solid rgb(106, 106, 107);
+  transition: width 1s ease-in-out;
+  font-family: Helvetica, sans-serif;
+  color: rgb(32, 32, 31);
+  font-style: bold;
+}
+#toDoInput:focus{
+outline: .7px solid rgb(14, 221, 14);
+border-radius: 0%;
+}
+#toDoBtn {
+  float: right;
+  width: 27%;
+  height: 3em;
+  background-color: rgb(18, 99, 190);
+  color: whitesmoke;
+  font-family: Helvetica, sans-serif;
+  border: none;
+  transition: width 1s ease-in-out;
+}
+#toDoBtn:hover {
+  cursor: pointer;
+  width: 29%;
+
+}
+#toDoList{
+    height: 80vh;
+    overflow-y: auto;
+    width: 100%;
+    margin-top: 20px;
+}
+#toDoList>li{
+    width: 98%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0px;
+    border-bottom: 1px solid gray ;
+    border-radius: 0;
+    transition: all .8s ease-in-out;
+}
+.toDoItem{
+    font-size: 1.3em;
+    padding-left: 5px;
+    color: rgb(61, 61, 58);
+    text-transform: capitalize;
+    font-family: Helvetica, sans-serif;
+    font-style: bold;
+    letter-spacing: 1px;
+    margin-right: auto;
+}
+#toDoList>li:hover{
+    background-color: rgb(245, 247, 248);
+    width: 99%;
+    padding: 22px opx;
+    cursor: pointer;
+}
+.deleteTodoBtn{
+    font-size: 1.3em;
+    font-family: Helvetica, sans-serif;
+    font-weight: 900;
+    background-color: transparent;
+    border: none;
+    color: rgb(61, 61, 58);
+    padding: 0px 20px;
+    transition: all .5s ease-in-out;
+}
+.deleteTodoBtn:hover{
+    color: rgb(202, 15, 15);
+    transform: rotate(10deg);
+    cursor: pointer;
+}

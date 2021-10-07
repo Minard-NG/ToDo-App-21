@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make those plans | ToDo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/todo-icon.ico" sizes="96x96">
+  </head>
+  <body>
+    <aside>
+        <img id = "icon" src="images/todo-icon.jpg" alt="todo icon">
+      <div class="aside-container">
+        <!-- <span>&quot;</span> -->
+        <p>Always plan ahead.</p>
+        <p>It wasn't raining when Noah built the ark</p>
+        <small>&#126; Richard Cushing</small>
+      </div>
+    </aside>
+    <main>
+      <form action="" id="toDoForm">
+        <fieldset>
+          <input type="text" id="toDoInput" placeholder="Take a bold step, Make a plan!"/>
+          <input type="button" value="&#43; ADD A TASK" id="toDoBtn" onclick="taskBtn()"/>
+        </fieldset>
+        
+        <ol id="toDoList">
+
+        </ol>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
